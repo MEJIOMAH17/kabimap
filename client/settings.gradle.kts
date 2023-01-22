@@ -15,6 +15,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "kabimap"
+rootProject.name = "kabimap-client"
 
 include(":android", ":desktop", ":common")
