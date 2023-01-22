@@ -1,5 +1,12 @@
 package com.github.mejiomah17.common
 
-actual fun getPlatformName(): String {
-    return "Android"
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.ExperimentalComposeUiApi
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+
+@OptIn(ExperimentalComposeUiApi::class)
+@Composable
+actual fun hideKeyboard() {
+    LocalSoftwareKeyboardController.current?.hide()
 }
+
